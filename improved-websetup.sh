@@ -25,8 +25,10 @@ start_httpd_service() {
 # Function to download and deploy website content
 download_and_deploy_website() {
     show_header "Downloading HTML template"
-    sudo wget -P /tmp/webfile https://www.tooplate.com/zip-templates/2134_gotto_job.zip #Enter download url of template here
-    unzip -o /tmp/webfile/2134_gotto_job.zip -d /tmp/webfile                            #Enter .zip name of file, overwrite file of same name
+    # Enter download url of template here
+    sudo wget -P /tmp/webfile https://www.tooplate.com/zip-templates/2134_gotto_job.zip
+    # Enter .zip name of file, overwrite file of same name
+    unzip -o /tmp/webfile/2134_gotto_job.zip -d /tmp/webfile
     # Checks if filename exists or not in destination
     for file in /tmp/webfile/2134_gotto_job/*; do
         filename=$(basename "$file")
