@@ -1,5 +1,4 @@
 # Bash-Scripting
 
-This is the collection of scripts I've wrote while learning
+Collection of web deploying and other scripts
 
-more in the branches
